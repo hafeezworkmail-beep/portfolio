@@ -1297,7 +1297,7 @@ header .right-column .talk-btn {
 
 .tabs {
   display: flex;
-  gap: 10px;
+  gap: 40px;
   margin-bottom: 40px;
   flex-wrap: wrap;
   justify-content: center;
@@ -1305,21 +1305,21 @@ header .right-column .talk-btn {
 
 .tab {
   padding: 10px 16px;
-  border: none;
-  border-radius: 4px;
-  background: #333;
+  border-radius: 0;
   color: #eee;
   cursor: pointer;
   transition: background 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .tab:hover {
-  background: #2df4a1;
+  color: #0065f8;
+  border-bottom: 1px solid #0065f8;
 }
 
 .tab.active {
-  background: #2df4a1;
-  color: #111;
+  color: #0065f8;
+  border-bottom: 1px solid #0065f8;
 }
 
 .tab-content {
@@ -1446,6 +1446,39 @@ header .right-column .talk-btn {
   .marquee::after {
     width: 5rem;
   }
+}
+
+.marquee-content .slide-img {
+  line-height: 0;
+  position: relative;
+}
+
+.marquee-content .btn {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #0065f8;
+  background-color: #0065f8;
+  padding: 10px 25px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.marquee-content li:hover .btn {
+  opacity: 1;
+}
+
+.marquee .btn:hover::before {
+  display: none;
+}
+
+.marquee .btn::before {
+  display: none;
+}
+
+.reverse .btn {
+  max-width: 142px;
+  width: 100%;
 }
 
 /* contact-us start */
