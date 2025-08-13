@@ -292,3 +292,31 @@ splide.mount();
 
 // video pop up end
 
+// scroll trigger start
+document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let panels = gsap.utils.toArray(".panel");
+    let tops = panels.map(panel => ScrollTrigger.create({ trigger: panel, start: "top top" }));
+
+    panels.forEach((panel) => {
+        ScrollTrigger.create({
+            trigger: panel,
+            start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
+            pin: true,
+            pinSpacing: false
+        });
+    });
+
+    ScrollTrigger.create({
+        snap: {
+            snapTo: (progress, self) => {
+                let panelStarts = tops.map(st => st.start);
+                let snapScroll = gsap.utils.snap(panelStarts, self.scroll());
+                return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll);
+            },
+            duration: 0.5
+        }
+    });
+});
+// scroll trigger end

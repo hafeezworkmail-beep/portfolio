@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link rel="stylesheet" href="./css/gsap.css" />
     <!-- Font Awesome 4 first -->
     <link rel="stylesheet" href="./css/font-awesome4.css" />
     <link rel="stylesheet" href="./css/font-awesome.min4.css" />
@@ -28,6 +29,10 @@
     <link rel="stylesheet" href="./css/slick.css" />
 
     <!-- Your custom styles last -->
+    <link
+      rel="stylesheet"
+      href="https://codepen.io/GreenSock/pen/xxmzBrw.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Noxfolio</title>
   </head>
@@ -219,7 +224,21 @@
             data-aos-delay="200"
             data-aos-duration="200"
           >
-            <img src="./images/abour-right-img.png" alt="" />
+            <div class="about-img">
+              <img src="./images/abour-right-img.png" alt="" />
+            </div>
+          </div>
+          <div class="text">
+            <span>
+              Experience Designer
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="text bottom-text">
+            <span>
+              Mark J.Collins
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </span>
           </div>
         </div>
       </div>
@@ -419,56 +438,56 @@
             data-aos-delay="200"
             data-aos-duration="200"
           >
-            <div class="box">
+            <div class="skills-box">
               <div class="top-img">
                 <img src="./images/experience-img-1.webp" alt="" />
               </div>
               <h4>Figma</h4>
               <span>95%</span>
             </div>
-            <div class="box">
+            <div class="skills-box">
               <div class="top-img">
                 <img src="./images/experience-img-2.webp" alt="" />
               </div>
               <h4>Framer</h4>
               <span>82%</span>
             </div>
-            <div class="box">
+            <div class="skills-box">
               <div class="top-img">
                 <img src="./images/experience-img-3.webp" alt="" />
               </div>
               <h4>Photoshop</h4>
               <span>93%</span>
             </div>
-            <div class="box">
+            <div class="skills-box">
               <div class="top-img">
                 <img src="./images/experience-img-4.webp" alt="" />
               </div>
               <h4>WordPress</h4>
               <span>95%</span>
             </div>
-            <div class="box">
+            <div class="skills-box">
               <div class="top-img">
                 <img src="./images/experience-img-5.webp" alt="" />
               </div>
               <h4>Angular</h4>
               <span>65%</span>
             </div>
-            <div class="box">
+            <div class="skills-box">
               <div class="top-img">
                 <img src="./images/experience-img-7.webp" alt="" />
               </div>
               <h4>Webflow</h4>
               <span>86%</span>
             </div>
-            <div class="box">
+            <div class="skills-box">
               <div class="top-img">
                 <img src="./images/experience-img-8.webp" alt="" />
               </div>
               <h4>Python</h4>
               <span>62%</span>
             </div>
-            <div class="box">
+            <div class="skills-box">
               <div class="top-img">
                 <img src="./images/experience-img-6.webp" alt="" />
               </div>
@@ -486,100 +505,116 @@
       <div class="container">
         <span class="sub-title project-title">Latest Works</span>
         <h2>Explore My Popular <span> Projects </span></h2>
-        <div class="content content-1">
-          <div
-            class="left-column"
-            data-aos="fade-right"
-            data-aos-delay="200"
-            data-aos-duration="200"
-          >
-            <img src="./images/project1.webp" alt="" />
-          </div>
-          <div
-            class="right-column"
-            data-aos="fade-left"
-            data-aos-delay="200"
-            data-aos-duration="200"
-          >
-            <span class="sub-title"> Product Design </span>
-            <h3>Mobile Application Design</h3>
-            <p>
-              Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-              inventore veritatis...
-            </p>
-            <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-        <div class="content content-wrap">
-          <div
-            class="left-column"
-            data-aos="fade-right"
-            data-aos-delay="200"
-            data-aos-duration="200"
-          >
-            <img src="./images/project2.webp" alt="" />
-          </div>
-          <div
-            class="right-column"
-            data-aos="fade-left"
-            data-aos-delay="200"
-            data-aos-duration="200"
-          >
-            <span class="sub-title"> Product Design </span>
-            <h3>Mobile Application Design</h3>
-            <p>
-              Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-              inventore veritatis...
-            </p>
-            <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <div class="panel">
+          <div class="content content-1">
+            <div
+              class="left-column"
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-duration="200"
+            >
+              <img src="./images/project1.webp" alt="" />
+            </div>
+            <div
+              class="right-column"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="200"
+            >
+              <span class="sub-title"> Product Design </span>
+              <h3>Mobile Application Design</h3>
+              <p>
+                Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
+                inventore veritatis...
+              </p>
+              <a href="#"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </div>
           </div>
         </div>
-        <div class="content">
-          <div
-            class="left-column"
-            data-aos="fade-right"
-            data-aos-delay="200"
-            data-aos-duration="200"
-          >
-            <img src="./images/project3.webp" alt="" />
-          </div>
-          <div
-            class="right-column"
-            data-aos="fade-left"
-            data-aos-delay="200"
-            data-aos-duration="200"
-          >
-            <span class="sub-title"> Product Design </span>
-            <h3>Mobile Application Design</h3>
-            <p>
-              Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-              inventore veritatis...
-            </p>
-            <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <div class="panel">
+          <div class="content content-wrap">
+            <div
+              class="left-column"
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-duration="200"
+            >
+              <img src="./images/project2.webp" alt="" />
+            </div>
+            <div
+              class="right-column"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="200"
+            >
+              <span class="sub-title"> Product Design </span>
+              <h3>Mobile Application Design</h3>
+              <p>
+                Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
+                inventore veritatis...
+              </p>
+              <a href="#"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </div>
           </div>
         </div>
-        <div class="content content-wrap">
-          <div
-            class="left-column"
-            data-aos="fade-right"
-            data-aos-delay="200"
-            data-aos-duration="200"
-          >
-            <img src="./images/project5.webp" alt="" />
+        <div class="panel">
+          <div class="content">
+            <div
+              class="left-column"
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-duration="200"
+            >
+              <img src="./images/project3.webp" alt="" />
+            </div>
+            <div
+              class="right-column"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="200"
+            >
+              <span class="sub-title"> Product Design </span>
+              <h3>Mobile Application Design</h3>
+              <p>
+                Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
+                inventore veritatis...
+              </p>
+              <a href="#"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </div>
           </div>
-          <div
-            class="right-column"
-            data-aos="fade-left"
-            data-aos-delay="200"
-            data-aos-duration="200"
-          >
-            <span class="sub-title"> Product Design </span>
-            <h3>Mobile Application Design</h3>
-            <p>
-              Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-              inventore veritatis...
-            </p>
-            <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="wrap">
+          <div class="content content-wrap last-content">
+            <div
+              class="left-column"
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-duration="200"
+            >
+              <img src="./images/project5.webp" alt="" />
+            </div>
+            <div
+              class="right-column"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="200"
+            >
+              <span class="sub-title"> Product Design </span>
+              <h3>Mobile Application Design</h3>
+              <p>
+                Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
+                inventore veritatis...
+              </p>
+              <a href="#"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </div>
           </div>
         </div>
         <a class="btn" href="#"
@@ -615,7 +650,7 @@
           >
             <div class="boxes splide__track">
               <div class="slick-slider aplite__list">
-                <div class="box splide__slide">
+                <div class="reviews-box splide__slide">
                   <div class="top-img">
                     <a
                       href="https://www.youtube.com/embed/AsykNkUMoNU?si=JJT-cRl94dulItyX"
@@ -637,7 +672,7 @@
                 </div>
               </div>
               <div class="slick-slider aplite__list">
-                <div class="box splide__slide">
+                <div class="reviews-box splide__slide">
                   <div class="top-img">
                     <a
                       href="https://www.youtube.com/embed/AsykNkUMoNU?si=JJT-cRl94dulItyX"
@@ -659,7 +694,7 @@
                 </div>
               </div>
               <div class="slick-slider aplite__list">
-                <div class="box splide__slide">
+                <div class="reviews-box splide__slide">
                   <div class="top-img">
                     <a
                       href="https://www.youtube.com/embed/AsykNkUMoNU?si=JJT-cRl94dulItyX"
@@ -681,7 +716,7 @@
                 </div>
               </div>
               <div class="slick-slider aplite__list">
-                <div class="box splide__slide">
+                <div class="reviews-box splide__slide">
                   <div class="top-img">
                     <a
                       href="https://www.youtube.com/embed/AsykNkUMoNU?si=JJT-cRl94dulItyX"
@@ -1224,6 +1259,32 @@
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.21/bundled/lenis.min.js"></script>
 
     <!-- Your custom scripts last -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=cahcebustin"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="./js/gsap.js"></script>
+    <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.js"></script>
     <script src="./js/custom.js"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      let panels = gsap.utils.toArray(".panel");
+      // we'll create a ScrollTrigger for each panel just to track when each panel's top hits the top of the viewport (we only need this for snapping)
+      let tops = panels.map((panel) =>
+        ScrollTrigger.create({ trigger: panel, start: "top top" })
+      );
+
+      panels.forEach((panel, i) => {
+        ScrollTrigger.create({
+          trigger: panel,
+          start: () =>
+            panel.offsetHeight < window.innerHeight
+              ? "top top"
+              : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
+          pin: true,
+          pinSpacing: false,
+        });
+      });
+    </script>
   </body>
 </html>
