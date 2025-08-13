@@ -84,135 +84,6 @@
     box-shadow: 0 0 8px lime;
   }
 }
-/* global animation end */
-
-/* GSAP CSS START HERE */
-
-/* * {
-  box-sizing: border-box;
-  user-select: none;
-}
-
-a {
-  color: var(--color-surface-white);
-  text-decoration: none;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  background: black;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: clamp(1rem, 8vw, 10rem);
-  font-weight: 600;
-  text-align: center;
-  margin-right: -0.5em;
-  width: 90vw;
-  max-width: 1200px;
-  text-transform: none;
-}
-
-header {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5%;
-  width: 100%;
-  z-index: 3;
-  height: 7em;
-  font-size: clamp(0.66rem, 2vw, 1rem);
-  letter-spacing: 0.5em;
-}
-
-section.first.second.third.fourth.fifth {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  position: fixed;
-  visibility: hidden;
-}
-
-section .outer,
-section .inner {
-  width: 100%;
-  height: 100%;
-  overflow-y: hidden;
-}
-
-section .bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  background-size: cover;
-  background-position: center;
-}
-
-section .bg h2 {
-  z-index: 999;
-}
-
-section .bg .clip-text {
-  overflow: hidden;
-}
-
-.first .bg {
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.6) 0%,
-      rgba(0, 0, 0, 0.1) 100%
-    ),
-    url("https://assets.codepen.io/16327/site-landscape-1.jpg");
-}
-
-.second .bg {
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.6) 0%,
-      rgba(0, 0, 0, 0.1) 100%
-    ),
-    url("https://assets.codepen.io/16327/site-landscape-5.jpeg");
-}
-
-.third .bg {
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.6) 0%,
-      rgba(0, 0, 0, 0.1) 100%
-    ),
-    url("https://assets.codepen.io/16327/site-landscape-2.jpg");
-}
-
-.fourth .bg {
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.6) 0%,
-      rgba(0, 0, 0, 0.1) 100%
-    ),
-    url("https://assets.codepen.io/16327/site-landscape-6.jpg");
-}
-
-.fifth .bg {
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.6) 0%,
-      rgba(0, 0, 0, 0.1) 100%
-    ),
-    url("https://assets.codepen.io/16327/site-landscape-8.jpg");
-  background-position: 50% 45%;
-}
-
-h2 * {
-  will-change: transform;
-} */
 
 /* GSAP CSS END HERE */
 /* universal styling start */
@@ -235,9 +106,13 @@ html {
 
 body {
   font-weight: 400;
-  background-color: rgba(0, 15, 9, var(--tw-bg-opacity, 1));
   overflow-x: hidden;
-  background-image: url(../images/pexels-umkreisel-app-956981.jpg);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 26%,
+    rgba(19, 15, 64, 1) 58%
+  );
+  height: 100% !important;
 }
 
 h1,
@@ -308,7 +183,7 @@ p {
   font-size: 15px;
   line-height: 21px;
   font-weight: 600;
-  color: #070707;
+  color: #ffffff;
   padding: 16px 35px;
   border-radius: 15px;
   display: block;
@@ -316,11 +191,11 @@ p {
   transition: all 0.2s ease-in-out;
   position: relative;
   z-index: 99;
-  border: 1px solid #2df4a1;
+  border: 1px solid #161179;
 }
 
 .btn::before {
-  background-color: #2df4a1;
+  background-color: #161179;
   content: "";
   position: absolute;
   right: 0;
@@ -355,7 +230,7 @@ h2 {
 }
 
 h2 span {
-  color: #2df4a1;
+  color: #0065f8;
 }
 
 .sub-title {
@@ -418,7 +293,7 @@ header ul li a {
 header .navbar-toggle span {
   width: 25px;
   height: 3px;
-  background-color: #2df4a1;
+  background-color: #ffffff;
   margin-bottom: 5px;
   display: block;
   border-radius: 50px;
@@ -438,7 +313,11 @@ header .main-menu {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(0 15 9 / 90%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 26%,
+    rgba(19, 15, 64, 1) 58%
+  );
   z-index: 999;
   max-width: 100%;
   text-align: center;
@@ -525,7 +404,9 @@ header .right-column .talk-btn {
 
 .banner h1 span {
   font-weight: 700;
-  color: #2df4a1;
+  background: -webkit-linear-gradient(#fff, #696969);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .banner .buttons .banner-button {
@@ -558,7 +439,7 @@ header .right-column .talk-btn {
   line-height: 46px;
   font-weight: 500;
   margin-bottom: 15px;
-  color: #2df4a1;
+  color: #ffffff;
 }
 
 .banner .right-column .inner {
@@ -719,127 +600,6 @@ header .right-column .talk-btn {
   }
 }
 
-.glitch {
-  position: relative;
-  overflow: hidden;
-}
-.glitch img {
-  position: relative;
-  z-index: 1;
-  display: block;
-}
-.glitch__layers {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 100%;
-  overflow: hidden;
-}
-.glitch__layer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-image: url(../images/banner-person-img.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-.glitch__layer:nth-child(1) {
-  transform: translateX(-5%);
-  animation: glitch-anim-1 2s infinite linear alternate;
-}
-.glitch__layer:nth-child(2) {
-  transform: translateX(3%) translateY(3%);
-  animation: glitch-anim-2 2.3s -0.8s infinite linear alternate;
-}
-.glitch__layer:nth-child(3) {
-  transform: translateX(5%);
-  animation: glitch-anim-flash 1s infinite linear;
-}
-@keyframes glitch-anim-1 {
-  0% {
-    clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
-  }
-  10% {
-    clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-  }
-  20% {
-    clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
-  }
-  30% {
-    clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
-  }
-  40% {
-    clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
-  }
-  50% {
-    clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%);
-  }
-  60% {
-    clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%);
-  }
-  70% {
-    clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
-  }
-  80% {
-    clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
-  }
-  90% {
-    clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
-  }
-  100% {
-    clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
-  }
-}
-@keyframes glitch-anim-2 {
-  0% {
-    clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
-  }
-  15% {
-    clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
-  }
-  25% {
-    clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%);
-  }
-  30% {
-    clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-  }
-  45% {
-    clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);
-  }
-  50% {
-    clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%);
-  }
-  65% {
-    clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
-  }
-  75% {
-    clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
-  }
-  80% {
-    clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
-  }
-  95% {
-    clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%);
-  }
-  100% {
-    clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
-  }
-}
-@keyframes glitch-anim-flash {
-  0% {
-    opacity: 0.2;
-  }
-  30%,
-  100% {
-    opacity: 0;
-  }
-}
-
 .banner .center-column {
   margin-right: 130px;
 }
@@ -872,7 +632,7 @@ header .right-column .talk-btn {
 }
 
 .about-me .skills span .fa-check {
-  color: #2df4a1;
+  color: #0065f8;
   font-size: 24px;
   line-height: 0;
   margin-right: 20px;
@@ -931,7 +691,7 @@ header .right-column .talk-btn {
   font-size: 16px;
   line-height: 0;
   color: #1f1f1f;
-  background-color: #2df4a1;
+  background-color: #0065f8;
   padding: 22px;
   border-radius: 50%;
   max-width: 16px;
@@ -1064,7 +824,7 @@ header .right-column .talk-btn {
 
 .resume .left-column .fa-star-of-life {
   font-size: 130px;
-  color: #2df4a1;
+  color: #0065f8;
   max-width: 121px;
   width: 100%;
 }
@@ -1092,7 +852,7 @@ header .right-column .talk-btn {
 }
 
 .resume .right-column .inner:hover .fa-arrow-right {
-  background-color: #2df4a1;
+  background-color: #0065f8;
   color: #070707;
 }
 
@@ -1138,7 +898,7 @@ header .right-column .talk-btn {
 }
 
 .services .card:hover .fa-arrow-right {
-  background-color: #2df4a1;
+  background-color: #0065f8;
   color: #070707;
 }
 
@@ -1151,7 +911,7 @@ header .right-column .talk-btn {
 }
 
 .services .card:hover span {
-  color: #2df4a1;
+  color: #0065f8;
 }
 
 .services .card .center-column p {
@@ -1161,7 +921,7 @@ header .right-column .talk-btn {
 .services .card .fa-arrow-right {
   font-size: 15px;
   line-height: 0;
-  color: #2df4a1;
+  color: #0065f8;
   transform: rotate(-50deg);
   max-width: 16px;
   width: 100%;
@@ -1304,7 +1064,7 @@ header .right-column .talk-btn {
 .projects .right-column a .fa-arrow-right {
   font-size: 15px;
   line-height: 0;
-  color: #2df4a1;
+  color: #0065f8;
   transform: rotate(-50deg);
   max-width: 17px;
   width: 100%;
@@ -1318,7 +1078,7 @@ header .right-column .talk-btn {
 }
 
 .projects .right-column a .fa-arrow-right:hover {
-  background-color: #2df4a1;
+  background-color: #0065f8;
   color: #070707;
 }
 
@@ -1328,7 +1088,7 @@ header .right-column .talk-btn {
 }
 
 .projects .content .sub-title {
-  color: #2df4a1;
+  color: #0065f8;
 }
 
 .projects .content-wrap {
@@ -1524,6 +1284,7 @@ div.video {
   height: 315px;
   display: none;
   position: absolute;
+  top: 0 !important;
 }
 div.video-wrapper {
   z-index: 1;
@@ -1748,7 +1509,7 @@ div.video-wrapper {
 }
 
 .contact-us label span {
-  color: #2df4a1;
+  color: #0065f8;
 }
 
 .contact-us .container {
@@ -1875,7 +1636,7 @@ footer .center-column .btn {
 
 footer .center-column form .fa-envelope {
   font-size: 16px;
-  color: #2df4a1;
+  color: #0065f8;
   position: absolute;
   left: 0;
   top: 50%;
