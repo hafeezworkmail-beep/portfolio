@@ -737,7 +737,7 @@ header .right-column .talk-btn {
   background-color: transparent;
 }
 
-.about-me .text {
+.about-me .avatar {
   max-width: 266px;
   width: 100%;
   background-color: #ffffff;
@@ -746,13 +746,13 @@ header .right-column .talk-btn {
   justify-content: center;
   padding: 15px 25px;
   position: absolute;
-  right: 37%;
+  right: 27%;
   bottom: 193px;
   transform: translateX(50%);
 }
 
-.about-me .bottom-text {
-  right: 33%;
+.about-me .avatar-2 {
+  right: 23%;
   bottom: 60px;
 }
 
@@ -762,6 +762,36 @@ header .right-column .talk-btn {
 
 .about-me .text .fa-arrow-right {
   transform: rotate(-34deg);
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translateY(0px);
+  }
+}
+
+.avatar {
+  width: 150px;
+  box-sizing: border-box;
+  border: 5px white solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  animation: float 3s ease-in-out infinite;
+}
+
+.avatar img {
+  width: 100%;
+  height: auto;
 }
 
 .about-me .text span {
