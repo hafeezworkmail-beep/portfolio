@@ -107,10 +107,10 @@ html {
 body {
   font-weight: 400;
   overflow-x: hidden;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 26%,
-    rgba(19, 15, 64, 1) 58%
+  background: radial-gradient(
+    circle at bottom right,
+    rgba(19, 15, 64, 1) 0%,
+    rgba(0, 0, 0, 1) 80%
   );
   height: 100% !important;
 }
