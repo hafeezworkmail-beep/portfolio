@@ -1,5 +1,8 @@
 
 
+
+// toggle start
+
 $(".navbar-toggle").click(function () {
     $(this).toggleClass("active");
     $(".main-menu").slideToggle();
