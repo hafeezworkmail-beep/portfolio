@@ -264,7 +264,12 @@ head {
 
 header {
   padding: 36px 0;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999999;
+  transition: all 0.3s ease-in-out;
 }
 
 header .container {
@@ -726,7 +731,7 @@ header.scrolled {
 
 .about-me .container {
   background-color: #070707;
-  padding: 130px 0;
+  padding: 130px 15px;
 }
 
 .about-me .right-column {
@@ -913,8 +918,12 @@ header.scrolled {
   width: 100%;
   border-radius: 50%;
   background-color: #1f1f1f;
-  padding: 75px;
+  padding: 56px 75px;
   margin-top: 90px;
+}
+
+.resume .left-column img {
+  border-radius: 100%;
 }
 
 .resume .container {
@@ -922,6 +931,7 @@ header.scrolled {
   justify-content: space-between;
   align-items: self-start;
   max-width: 1320px;
+  gap: 30px;
 }
 
 .resume .inner-content {
@@ -1029,7 +1039,7 @@ header.scrolled {
 
 .experience .container {
   background-color: #070707;
-  padding: 130px 0;
+  padding: 130px 15px;
   position: relative;
 }
 
@@ -1089,6 +1099,7 @@ header.scrolled {
   max-width: 1446px;
   width: 100%;
   margin: 0 auto;
+  gap: 30px;
 }
 
 .experience .container::before {
@@ -1922,6 +1933,18 @@ footer .fa-phone {
     left: -80px;
     top: 50%;
   }
+
+  .services .cards a {
+    max-width: 47%;
+  }
+
+  .experience .left-column {
+    max-width: 38%;
+  }
+
+  .experience .right-column .skills-box {
+    max-width: 23%;
+  }
 }
 
 @media screen and (max-width: 1190px) {
@@ -1992,6 +2015,101 @@ footer .fa-phone {
   .banner .left-column {
     max-width: 40%;
   }
+
+  h2 {
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 25px;
+  }
+  .about-me .links {
+    padding: 15px 25px;
+  }
+
+  .about-me .left-column {
+    max-width: 47%;
+  }
+
+  .about-me .links .link svg {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .about-me .links .link a {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .about-me .links .link {
+    gap: 10px;
+  }
+
+  .about-me .right-column {
+    max-width: 43%;
+  }
+
+  .about-me .avatar {
+    right: 22%;
+  }
+
+  .about-me .avatar-2 {
+    right: 19%;
+  }
+
+  .about-me .links .link {
+    width: 100%;
+  }
+
+  .about-me .container {
+    padding: 80px 15px;
+  }
+
+  h3 {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+
+  .resume .right-column .content .inner .fa-arrow-right {
+    padding: 15px;
+  }
+
+  .resume .right-column .content .inner {
+    gap: 10px;
+  }
+
+  .resume .left-column {
+    max-width: 235px;
+    padding: 34px 56px;
+  }
+
+  .resume {
+    padding: 80px 0;
+  }
+
+  .resume .right-column .content {
+    padding: 35px;
+  }
+
+  .services {
+    padding: 80px 0;
+  }
+
+  .services .card {
+    padding: 30px 30px;
+  }
+
+  .services .card .fa-arrow-right {
+    padding: 15px;
+  }
+
+  .services .card span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .experience .container {
+    padding: 80px 15px;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -2023,6 +2141,70 @@ footer .fa-phone {
 
   .banner .circle {
     row-gap: 70px;
+  }
+
+  .about-me .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about-me .left-column {
+    max-width: 100%;
+  }
+
+  .about-me .right-column {
+    max-width: 368px;
+  }
+
+  .about-me .avatar {
+    right: 46%;
+    bottom: 140px;
+  }
+
+  .about-me .avatar-2 {
+    right: 40%;
+    bottom: 35px;
+  }
+
+  .resume .left-column {
+    display: none;
+  }
+
+  .resume .right-column h2 {
+    margin-bottom: 25px;
+  }
+
+  .services .cards {
+    gap: 20px;
+  }
+
+  .services .card {
+    padding: 15px 15px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+
+  .services .card .fa-arrow-right {
+    padding: 10px;
+    max-width: 10px;
+    font-size: 10px;
+  }
+
+  .services H2 {
+    margin: 0 auto 30px auto;
+  }
+
+  .experience .content {
+    flex-direction: column;
+  }
+
+  .experience .left-column {
+    max-width: 100%;
   }
 }
 
@@ -2090,6 +2272,125 @@ footer .fa-phone {
   .banner .left-column {
     text-align: center;
   }
+
+  .about-me .left-column {
+    text-align: center;
+  }
+
+  .about-me .skills {
+    margin: 0 auto 30px auto;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .about-me p {
+    margin-bottom: 35px;
+  }
+
+  .about-me .links .link {
+    flex-direction: column;
+  }
+
+  .about-me .avatar {
+    right: 19%;
+    bottom: 97px;
+  }
+
+  .about-me .avatar-2 {
+    right: 18%;
+    bottom: 8px;
+  }
+
+  .about-me .skills span .fa-check {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .about-me .container {
+    padding: 40px 15px;
+  }
+
+  .about-me .avatar {
+    position: unset;
+  }
+
+  .about-me .links {
+    margin: 0 auto;
+  }
+
+  .resume .right-column .content::before {
+    width: 0;
+  }
+
+  .resume .right-column .content .inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .resume .inner-content {
+    gap: 30px;
+  }
+
+  .resume .right-column .content {
+    gap: 30px;
+  }
+
+  .resume .right-column .content .inner .fa-arrow-right {
+    margin: 0 auto 15px auto;
+  }
+
+  .resume .inner-content {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .resume .inner-text {
+    width: 100%;
+  }
+
+  .resume {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .services .cards a {
+    max-width: 100%;
+  }
+
+  .services {
+    padding: 40px 0;
+  }
+
+  .experience .container {
+    padding: 40px 15px;
+  }
+  .experience .right-column .skills-box {
+    max-width: 31%;
+  }
+
+  .experience .left-column {
+    text-align: center;
+  }
+
+  .experience .btn {
+    margin: 0 auto;
+  }
+
+  .btn {
+    padding: 15px 15px;
+    max-width: 174px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -2097,5 +2398,25 @@ footer .fa-phone {
     flex-direction: column;
     align-items: center;
     gap: 25px;
+  }
+
+  .about-me .skills {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-me .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services .card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .experience .right-column .skills-box {
+    max-width: 48%;
   }
 }
