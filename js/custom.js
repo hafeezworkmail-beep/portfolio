@@ -34,7 +34,8 @@ tabs.forEach((tab) => {
     });
 });
 //tabs
-//letters changing
+
+// contineus slider
 
 document.querySelectorAll('.marquee').forEach((marquee) => {
     const root = document.documentElement;
@@ -47,6 +48,11 @@ document.querySelectorAll('.marquee').forEach((marquee) => {
         content.appendChild(content.children[i].cloneNode(true));
     }
 });
+
+// continues  slider
+
+//letters changing
+
 
 var words = document.getElementsByClassName('word');
 var wordArray = [];
@@ -223,8 +229,17 @@ $('.boxes').slick({
     slidesToScroll: 1,
     arrow: true,
     dots: false,
-    prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>'
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 // slick-slider start
