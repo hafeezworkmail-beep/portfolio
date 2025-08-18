@@ -583,7 +583,7 @@ header.scrolled {
   background: #fff;
   top: -6px;
   border-radius: 50%;
-  box-shadow: 0 0 10px 6px #2df4a1;
+  box-shadow: 0 0 10px 6px #0065f8;
 }
 
 .banner .circle-lg {
@@ -2783,6 +2783,7 @@ footer .fa-phone {
   header .right-column .talk-btn {
     font-size: 14px;
     line-height: 20px;
+    display: none;
   }
 
   header .right-column {
