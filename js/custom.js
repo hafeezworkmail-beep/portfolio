@@ -1,3 +1,45 @@
+const openBtns = document.querySelectorAll(".open-modal");
+const closeBtn = document.querySelector(".close-modal");
+const modalOverlay = document.querySelector(".modal-overlay");
+
+// loop through all buttons
+openBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        modalOverlay.classList.add("active");
+
+        // if each button should open a different video
+        const videoSrc = btn.getAttribute("data-video"); // get video from data attr
+        const video = modalOverlay.querySelector("video");
+        if (videoSrc) {
+            video.src = videoSrc;
+            video.play();
+        }
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    modalOverlay.classList.remove("active");
+
+    // stop video on close
+    const video = modalOverlay.querySelector("video");
+    if (video) {
+        video.pause();
+        video.currentTime = 0;
+    }
+});
+
+modalOverlay.addEventListener("click", (e) => {
+    if (e.target === modalOverlay) {
+        modalOverlay.classList.remove("active");
+
+        // stop video on click outside
+        const video = modalOverlay.querySelector("video");
+        if (video) {
+            video.pause();
+            video.currentTime = 0;
+        }
+    }
+});
 
 // header sticky start
 window.addEventListener("scroll", function () {

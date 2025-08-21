@@ -1130,19 +1130,19 @@ header.scrolled {
 .projects {
   background-color: rgb(12 12 43);
   position: relative;
-  padding: 130px 0;
+  padding: 100px 0;
 }
 
 .projects::after {
   content: "";
-  top: -56px;
+  top: -67px;
   left: 0;
   position: absolute;
   width: 100%;
-  height: 101.6%;
+  height: 101.8%;
   clip-path: polygon(0 100%, 0 70px, 28% 70px, 33% 0, 100% 0, 100% 100%);
   background-size: cover;
-  background-color: #ffffff;
+  background-color: #1f1f1f;
 }
 
 .projects .content {
@@ -1268,6 +1268,11 @@ header.scrolled {
   align-items: center;
 }
 
+.projects .container {
+  position: relative;
+  z-index: 99;
+}
+
 /* .projects end */
 
 /* reviews start */
@@ -1300,6 +1305,7 @@ header.scrolled {
 .reviews .right-column {
   display: flex;
   gap: 30px;
+  position: relative;
 }
 
 .reviews .right-column .top-img {
@@ -1417,6 +1423,99 @@ header.scrolled {
   width: 100%;
 }
 
+.site-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.open-modal {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.open-modal:hover {
+  border: 0 !important;
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background: #fff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 60px 0;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  position: absolute;
+  left: 29%;
+  top: 14%;
+  transform: translate(-50%);
+}
+
+.reviews .right-column .modal video {
+  width: 100%;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-action {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: #0077ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Show modal */
+.modal-overlay.active {
+  display: flex;
+}
+
 /* .reviews end */
 
 /* portfolio start */
@@ -1438,23 +1537,16 @@ header.scrolled {
 }
 
 .tab {
-  padding: 10px 16px;
+  padding: 15px 16px;
   border-radius: 0;
   color: #eee;
   cursor: pointer;
   transition: background 0.3s ease;
   transition: all 0.3s ease-in-out;
-}
-
-.tab:hover {
-  color: #0065f8;
-  border-bottom: 1px solid #0065f8 !important;
-  border: 0;
-}
-
-.tab.active {
-  color: #0065f8;
-  border-bottom: 1px solid #0065f8;
+  background-color: #0065f8;
+  border-radius: 10px;
+  max-width: 131px;
+  width: 100%;
 }
 
 .tab-content {
@@ -1557,7 +1649,7 @@ header.scrolled {
 }
 
 :root {
-  --marquee-elements-displayed: 4;
+  --marquee-elements-displayed: 3;
 }
 
 .marquee-content li {
@@ -1597,13 +1689,17 @@ header.scrolled {
   position: absolute;
   opacity: 0;
   transition: all 0.3s ease-in-out;
-  border: 1px solid #0065f8;
-  background-color: #0065f8;
-  padding: 10px 25px;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
   font-size: 14px;
   line-height: 20px;
-  max-width: 149px;
+  max-width: 160px;
   width: 100%;
+}
+
+.marquee-content .btn .fa-chevron-right {
+  margin-left: 15px;
 }
 
 .marquee-content li:hover .btn {
@@ -1616,6 +1712,7 @@ header.scrolled {
 
 .marquee-content li .portfolio-img {
   position: relative;
+  line-height: 0;
 }
 
 .marquee-content li .portfolio-img::before {
@@ -1626,7 +1723,7 @@ header.scrolled {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: #0000005e;
+  background-color: rgb(19 15 64 / 80%);
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
 }
