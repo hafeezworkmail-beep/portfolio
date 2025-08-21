@@ -854,12 +854,12 @@ header.scrolled {
   display: flex;
   justify-content: space-between;
   background-color: #1f1f1f;
-  padding: 60px;
+  padding: 50px;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 55px;
   position: relative;
 }
 
@@ -976,7 +976,7 @@ header.scrolled {
 
 .services .card {
   background-color: #1f1f1f;
-  padding: 35px 50px;
+  padding: 35px 40px;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
@@ -984,6 +984,7 @@ header.scrolled {
   width: 100%;
   border: 1px solid #353535;
   transition: all 0.3s ease-in-out;
+  gap: 10px;
 }
 
 .services .card:hover .fa-arrow-right {
@@ -1516,6 +1517,11 @@ header.scrolled {
   display: flex;
 }
 
+.reviews .reviews-box p {
+  height: 100%;
+  min-height: 110px;
+}
+
 /* .reviews end */
 
 /* portfolio start */
@@ -1547,6 +1553,10 @@ header.scrolled {
   border-radius: 10px;
   max-width: 131px;
   width: 100%;
+}
+
+.tab:hover {
+  border: 0;
 }
 
 .tab-content {
@@ -1694,7 +1704,7 @@ header.scrolled {
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  max-width: 160px;
+  max-width: 122px;
   width: 100%;
 }
 
@@ -1737,7 +1747,7 @@ header.scrolled {
 }
 
 .reverse .btn {
-  max-width: 143px;
+  max-width: 122px;
   width: 100%;
 }
 
@@ -2100,6 +2110,25 @@ footer .fa-phone {
     max-width: 35px;
     padding: 10px;
   }
+
+  .resume .right-column .content {
+    gap: 21px;
+    padding: 30px;
+  }
+
+  .services .center-column h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .services .center-column p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .services .card {
+    padding: 35px 30px;
+  }
 }
 
 @media screen and (max-width: 1190px) {
@@ -2243,6 +2272,7 @@ footer .fa-phone {
 
   .resume .right-column .content {
     padding: 35px;
+    gap: 14px;
   }
 
   .services {
@@ -2250,7 +2280,7 @@ footer .fa-phone {
   }
 
   .services .card {
-    padding: 30px 30px;
+    padding: 20px;
   }
 
   .services .card .fa-arrow-right {
@@ -2318,6 +2348,11 @@ footer .fa-phone {
 
   .reviews .right-column .boxes {
     max-width: 696px;
+  }
+
+  .services .center-column h3 {
+    font-size: 17px;
+    line-height: 23px;
   }
 }
 
@@ -2809,7 +2844,7 @@ footer .fa-phone {
   }
 
   .projects .left-column {
-    padding-top: 30px;
+    margin-top: 30px;
   }
 
   .projects .right-column {
@@ -2823,6 +2858,21 @@ footer .fa-phone {
   footer .center-column form {
     max-width: 387px;
     margin: 0 auto;
+  }
+
+  .modal {
+    left: 16.5%;
+  }
+
+  .tabs {
+    gap: 20px;
+  }
+
+  .tab {
+    font-size: 13px;
+    line-height: 19px;
+    max-width: 100px;
+    padding: 5px 5px;
   }
 }
 
@@ -2910,5 +2960,20 @@ footer .fa-phone {
   header .right-column {
     max-width: 106px;
     gap: 10px;
+  }
+
+  .modal {
+    max-width: 250px;
+    padding: 10px;
+  }
+
+  .marquee-content .btn .fa-chevron-right {
+    margin-left: 5px;
+  }
+
+  .marquee-content .btn {
+    max-width: 97px;
+    font-size: 12px;
+    line-height: 18px;
   }
 }
