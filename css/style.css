@@ -1223,16 +1223,24 @@ header.scrolled {
   line-height: 0;
 }
 
-.projects .left-column::after {
-  content: "";
+.projects .video-frame {
+  max-width: 652px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0 77px;
+}
+
+.projects .video-frame img {
+  width: 100%;
   position: absolute;
-  width: 200%;
-  height: 0%;
-  left: 50%;
-  top: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.projects .video-frame::after {
+  background-color: transparent !important;
 }
 
 .projects .left-column::after {
@@ -1760,6 +1768,93 @@ header.scrolled {
 
 .marquee:hover .marquee-content {
   animation-play-state: paused;
+}
+
+.draw-btn {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+
+  box-shadow: inset 0 0 0 2px #7a7579;
+  color: #7a7579;
+  font-size: 23px;
+  font-weight: 500;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.draw-btn.icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.draw-btn.text {
+  padding: 10px;
+}
+
+.draw-btn::before,
+.draw-btn::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-btn {
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+  border-radius: 0;
+}
+.draw-btn::before,
+.draw-btn::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw-btn::before {
+  top: 0;
+  left: 0;
+}
+.draw-btn::after {
+  bottom: 0;
+  right: 0;
+}
+.draw-btn:hover {
+  color: #ffffff;
+  border: 0;
+}
+.draw-btn:hover::before,
+.draw-btn:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw-btn:hover::before {
+  border-top-color: #ffffff;
+  border-right-color: #ffffff;
+
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  -moz-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  -o-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw-btn:hover::after {
+  border-bottom-color: #ffffff;
+  border-left-color: #ffffff;
+
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+  -moz-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+  -o-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
 }
 
 /* contact-us start */
@@ -2305,10 +2400,6 @@ footer .fa-phone {
 
   .projects {
     padding: 80px 0;
-  }
-
-  :root {
-    --marquee-elements-displayed: 4; /* Show only 4 at a time */
   }
 
   .contact-us form input {

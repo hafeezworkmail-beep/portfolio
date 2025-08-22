@@ -575,16 +575,16 @@
         <div class="panel">
           <div class="content">
             <div
-              class="left-column"
+              class="left-column video-frame"
               data-aos="fade-right"
               data-aos-delay="200"
               data-aos-duration="200"
             >
-              <video controls>
+              <video id="myVideo" autoplay loop playsinline>
                 <source src="./images/project-video.mp4" type="video/mp4" />
-                <source src="./images/project-video.mp4" type="video/webm" />
                 <p>Your browser does not support HTML5 video.</p>
               </video>
+              <img src="./images/video-frame-img.png" alt="" />
             </div>
             <div
               class="right-column"
@@ -799,12 +799,34 @@
     <section class="portfolio">
       <div class="tabs-container">
         <div class="tabs">
-          <button class="tab active" data-tab="tab1">Frontend</button>
-          <button class="tab" data-tab="tab2">Backend</button>
-          <button class="tab" data-tab="tab3">WordPress</button>
-          <button class="tab" data-tab="tab4">E-Commerce</button>
-          <button class="tab" data-tab="tab5">UI/UX</button>
-          <button class="tab" data-tab="tab6">Maintenance</button>
+          <a href="#" class="link">
+            <button class="draw-btn text active" data-tab="tab1">
+              front-end
+            </button>
+          </a>
+          <a href="#" class="link">
+            <button class="draw-btn text active" data-tab="tab2">
+              Backend
+            </button>
+          </a>
+          <a href="#" class="link">
+            <button class="draw-btn text active" data-tab="tab3">
+              WordPress
+            </button>
+          </a>
+          <a href="#" class="link">
+            <button class="draw-btn text active" data-tab="tab4">
+              E-Commerce
+            </button>
+          </a>
+          <a href="#" class="link">
+            <button class="draw-btn text active" data-tab="tab5">UI/UX</button>
+          </a>
+          <a href="#" class="link">
+            <button class="draw-btn text active" data-tab="tab6">
+              Maintenance
+            </button>
+          </a>
         </div>
 
         <div class="tab-content active" id="tab1">
@@ -812,8 +834,8 @@
             <div class="marquee">
               <ul class="marquee-content">
                 <li>
-                  <a class="slide-img" href="#">
-                    <a class="btn" href="#"
+                  <a class="slide-img" href="./images/portfolio-image.jfif">
+                    <a class="btn" href="./images/portfolio-image.jfif"
                       >view-project<i class="fas fa-chevron-right"></i
                     ></a>
                     <div class="portfolio-img">
@@ -822,8 +844,21 @@
                   </a>
                 </li>
                 <li>
-                  <a class="slide-img" href="#">
-                    <a class="btn" href="#"
+                  <a class="slide-img" href="./images/portfolio-image-1.jfif">
+                    <a class="btn" href="./images/portfolio-image-1.jfif"
+                      >view-project<i class="fas fa-chevron-right"></i
+                    ></a>
+                    <div class="portfolio-img">
+                      <img src="./images/portfolio-image-1.jfif" alt="GitHub" />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="slide-img"
+                    href="./images/portfolio-project-img.png"
+                  >
+                    <a class="btn" href="./images/portfolio-project-img.png"
                       >view-project<i class="fas fa-chevron-right"></i
                     ></a>
                     <div class="portfolio-img">
@@ -835,47 +870,31 @@
                   </a>
                 </li>
                 <li>
-                  <a class="slide-img" href="#">
-                    <a class="btn" href="#"
+                  <a class="slide-img" href="./images/portfolio-image.jfif">
+                    <a class="btn" href="./images/portfolio-image.jfif"
                       >view-project<i class="fas fa-chevron-right"></i
                     ></a>
                     <div class="portfolio-img">
-                      <img
-                        src="./images/portfolio-project-img.png"
-                        alt="GitHub"
-                      />
+                      <img src="./images/portfolio-image.jfif" alt="GitHub" />
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a class="slide-img" href="#">
-                    <a class="btn" href="#"
+                  <a class="slide-img" href="./images/portfolio-image-1.jfif">
+                    <a class="btn" href="./images/portfolio-image-1.jfif"
                       >view-project<i class="fas fa-chevron-right"></i
                     ></a>
                     <div class="portfolio-img">
-                      <img
-                        src="./images/portfolio-project-img.png"
-                        alt="GitHub"
-                      />
+                      <img src="./images/portfolio-image-1.jfif" alt="GitHub" />
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
-                    <div class="portfolio-img">
-                      <img
-                        src="./images/portfolio-project-img.png"
-                        alt="GitHub"
-                      />
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a class="slide-img" href="#">
-                    <a class="btn" href="#"
+                  <a
+                    class="slide-img"
+                    href="./images/portfolio-project-img.png"
+                  >
+                    <a class="btn" href="./images/portfolio-project-img.png"
                       >view-project<i class="fas fa-chevron-right"></i
                     ></a>
                     <div class="portfolio-img">
@@ -1954,6 +1973,47 @@
       </div>
     </footer>
     <!-- Font Awesome (only one version) -->
+    <script>
+      const video = document.getElementById("myVideo");
+
+      // Check if video is visible on load
+      function isInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      // IntersectionObserver for scroll pause/resume
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      observer.observe(video);
+
+      // Try to play on load if visible
+      window.addEventListener("load", () => {
+        if (isInViewport(video)) {
+          video.play().catch((err) => {
+            console.log("Autoplay blocked:", err);
+          });
+        }
+      });
+    </script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"

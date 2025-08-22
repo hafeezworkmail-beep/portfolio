@@ -1,3 +1,4 @@
+
 const openBtns = document.querySelectorAll(".open-modal");
 const closeBtn = document.querySelector(".close-modal");
 const modalOverlay = document.querySelector(".modal-overlay");
