@@ -1274,6 +1274,13 @@ header.scrolled {
   z-index: 99;
 }
 
+.projects .panel video {
+  max-width: 630px;
+  width: 100%;
+  position: relative;
+  z-index: 99999999;
+}
+
 /* .projects end */
 
 /* reviews start */
