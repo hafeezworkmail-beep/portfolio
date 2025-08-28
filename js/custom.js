@@ -173,33 +173,6 @@ window.addEventListener('loader', function () {
 });
 //loader-animation
 
-//counting-animation
-const counterAnimation = (el, initialNum, finalNum) => {
-    if (Number.isInteger(finalNum)) {
-        let interval = setInterval(function () {
-            el.innerHTML = initialNum;
-            (initialNum >= finalNum) ? clearInterval(interval) : '';
-            initialNum++;
-        }, 150);
-    }
-    else {
-        let intInitialNum = Math.floor(initialNum);
-        let intFinalNum = Math.floor(finalNum);
-        let interval = setInterval(function () {
-            el.innerHTML = intInitialNum;
-            if (intInitialNum >= intFinalNum) {
-                clearInterval(interval);
-                el.innerHTML = `${finalNum.toString().replace('.', ',')}`;
-            }
-            intInitialNum++;
-        }, 50);
-    }
-}
-
-counterAnimation(document.querySelector('#foo'), 0, 13);
-counterAnimation(document.querySelector('#bar'), 0, 8);
-counterAnimation(document.querySelector('#satisfied'), 0, 99);
-//counting-animation
 
 //mouse animation
 

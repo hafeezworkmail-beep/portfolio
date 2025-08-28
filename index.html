@@ -119,42 +119,6 @@
             ></a>
           </div>
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="200"
-          class="center-column"
-        >
-          <img src="./images/banner-person-img.png" alt="" />
-          <div class="circles-wrapper">
-            <div class="circle circle-lg">
-              <div class="circle circle-md">
-                <div class="circle circle-sm"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-duration="200"
-          class="right-column"
-        >
-          <div class="achivement">
-            <div class="inner">
-              <span><span id="foo">13</span>+</span>
-              <p>Years Of Experience</p>
-            </div>
-            <div class="inner">
-              <span><span id="bar">8</span>K+</span>
-              <p>Project Complete</p>
-            </div>
-            <div class="inner">
-              <span><span id="satisfied">99</span>%</span>
-              <p>Client Satisfactions</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -224,29 +188,13 @@
             data-aos-duration="200"
           >
             <div class="about-img">
-              <img src="./images/abour-right-img.png" alt="" />
+              <video id="myVideo" autoplay loop playsinline>
+                <source src="./images/project-video.mp4" type="video/mp4" />
+                <p>Your browser does not support HTML5 video.</p>
+              </video>
+              <img src="./images/video-frame-img.png" alt="" />
             </div>
           </div>
-          <a href="#">
-            <div class="avatar">
-              <div class="text">
-                <a href="#">
-                  Experience Developer
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="avatar avatar-2">
-              <div class="text bottom-text">
-                <a href="#">
-                  Mark J.Collins
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </a>
         </div>
       </div>
     </section>
@@ -580,11 +528,7 @@
               data-aos-delay="200"
               data-aos-duration="200"
             >
-              <video id="myVideo" autoplay loop playsinline>
-                <source src="./images/project-video.mp4" type="video/mp4" />
-                <p>Your browser does not support HTML5 video.</p>
-              </video>
-              <img src="./images/video-frame-img.png" alt="" />
+              <img src="./images/project2.webp" alt="" />
             </div>
             <div
               class="right-column"
@@ -799,25 +743,45 @@
     <section class="portfolio">
       <div class="tabs-container">
         <div class="tabs">
-          <button class="draw-btn text tab active" data-tab="tab1">
-            front-end
-          </button>
-          <button class="draw-btn text tab" data-tab="tab2">Backend</button>
-          <button class="draw-btn text tab" data-tab="tab3">WordPress</button>
-          <button class="draw-btn text tab" data-tab="tab4">E-Commerce</button>
-          <button class="draw-btn text tab" data-tab="tab5">UI/UX</button>
-          <button class="draw-btn text tab" data-tab="tab6">Maintenance</button>
+          <div class="tab-btn">
+            <button class="draw-btn text cut tab active" data-tab="tab1">
+              front-end
+            </button>
+          </div>
+          <div class="tab-btn">
+            <button class="draw-btn text tab cut" data-tab="tab2">
+              Backend
+            </button>
+          </div>
+          <div class="tab-btn">
+            <button class="draw-btn text cut tab" data-tab="tab3">
+              WordPress
+            </button>
+          </div>
+          <div class="tab-btn">
+            <button class="draw-btn text cut tab" data-tab="tab4">
+              E-Commerce
+            </button>
+          </div>
+          <div class="tab-btn">
+            <button class="draw-btn text cut tab" data-tab="tab5">UI/UX</button>
+          </div>
+          <div class="tab-btn">
+            <button class="draw-btn text cut tab" data-tab="tab6">
+              Maintenance
+            </button>
+          </div>
         </div>
 
         <div class="tab-content active" id="tab1">
-          <div class="logo-row">
+          <div class="logo-row top-row">
             <div class="marquee">
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="./images/portfolio-image.jfif">
-                    <a class="btn" href="./images/portfolio-image.jfif"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img src="./images/portfolio-image.jfif" alt="GitHub" />
                     </div>
@@ -825,9 +789,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="./images/portfolio-image-1.jfif">
-                    <a class="btn" href="./images/portfolio-image-1.jfif"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img src="./images/portfolio-image-1.jfif" alt="GitHub" />
                     </div>
@@ -838,9 +802,9 @@
                     class="slide-img"
                     href="./images/portfolio-project-img.png"
                   >
-                    <a class="btn" href="./images/portfolio-project-img.png"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -851,9 +815,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="./images/portfolio-image.jfif">
-                    <a class="btn" href="./images/portfolio-image.jfif"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img src="./images/portfolio-image.jfif" alt="GitHub" />
                     </div>
@@ -861,9 +825,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="./images/portfolio-image-1.jfif">
-                    <a class="btn" href="./images/portfolio-image-1.jfif"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img src="./images/portfolio-image-1.jfif" alt="GitHub" />
                     </div>
@@ -874,9 +838,9 @@
                     class="slide-img"
                     href="./images/portfolio-project-img.png"
                   >
-                    <a class="btn" href="./images/portfolio-project-img.png"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -894,9 +858,9 @@
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -907,9 +871,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -920,9 +884,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -933,9 +897,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -946,9 +910,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -959,9 +923,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -975,14 +939,14 @@
           </div>
         </div>
         <div class="tab-content" id="tab2">
-          <div class="logo-row">
+          <div class="logo-row top-row">
             <div class="marquee">
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -993,9 +957,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1006,9 +970,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1019,9 +983,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1032,9 +996,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1045,9 +1009,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1065,9 +1029,9 @@
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1078,9 +1042,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1091,9 +1055,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1104,9 +1068,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1117,9 +1081,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1130,9 +1094,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1146,14 +1110,14 @@
           </div>
         </div>
         <div class="tab-content" id="tab3">
-          <div class="logo-row">
+          <div class="logo-row top-row">
             <div class="marquee">
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1164,9 +1128,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1177,9 +1141,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1190,9 +1154,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1203,9 +1167,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1216,9 +1180,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1236,9 +1200,9 @@
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1249,9 +1213,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1262,9 +1226,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1275,9 +1239,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1288,9 +1252,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1301,9 +1265,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1317,14 +1281,14 @@
           </div>
         </div>
         <div class="tab-content" id="tab4">
-          <div class="logo-row">
+          <div class="logo-row top-row">
             <div class="marquee">
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1335,9 +1299,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1348,9 +1312,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1361,9 +1325,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1374,9 +1338,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1387,9 +1351,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1407,9 +1371,9 @@
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1420,9 +1384,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1433,9 +1397,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1446,9 +1410,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1459,9 +1423,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1472,9 +1436,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1488,14 +1452,14 @@
           </div>
         </div>
         <div class="tab-content" id="tab5">
-          <div class="logo-row">
+          <div class="logo-row top-row">
             <div class="marquee">
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1506,9 +1470,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1519,9 +1483,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1532,9 +1496,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1545,9 +1509,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1558,9 +1522,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1578,9 +1542,9 @@
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1591,9 +1555,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1604,9 +1568,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1617,9 +1581,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1630,9 +1594,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1643,9 +1607,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1659,14 +1623,14 @@
           </div>
         </div>
         <div class="tab-content" id="tab6">
-          <div class="logo-row">
+          <div class="logo-row top-row">
             <div class="marquee">
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1677,9 +1641,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1690,9 +1654,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1703,9 +1667,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1716,9 +1680,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1729,9 +1693,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1749,9 +1713,9 @@
               <ul class="marquee-content">
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1762,9 +1726,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1775,9 +1739,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1788,9 +1752,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1801,9 +1765,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1814,9 +1778,9 @@
                 </li>
                 <li>
                   <a class="slide-img" href="#">
-                    <a class="btn" href="#"
-                      >view-project<i class="fas fa-chevron-right"></i
-                    ></a>
+                    <a class="btn" href="mailto:www.example.com"
+                      ><i class="fas fa-globe"></i> www.example.com</a
+                    >
                     <div class="portfolio-img">
                       <img
                         src="./images/portfolio-project-img.png"
@@ -1895,46 +1859,17 @@
     <footer>
       <div class="footer-top">
         <div class="container">
-          <a class="logo" href="#"
-            ><img src="./images/logo (2).png" alt=""
-          /></a>
-          <div class="center-column">
-            <h3>Quick Link</h3>
-            <ul>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Faqs</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <form>
-              <i class="fa-regular fa-envelope"></i>
-              <input type="email" placeholder="Email Address " />
-              <a class="btn" href="#"
-                >Sign Up<i class="fa fa-arrow-right" aria-hidden="true"></i
-              ></a>
-            </form>
-          </div>
-          <div class="right-column">
-            <h3>Address</h3>
-            <ul>
-              <li>
-                <i class="fa fa-map" aria-hidden="true"></i>55 Main Street, 2nd
-                block, New York City
-              </li>
-              <li>
-                <a href="mailto:support@gmail.com"
-                  ><i class="fa fa-envelope" aria-hidden="true"></i
-                  >support@gmail.com</a
-                >
-              </li>
-              <li class="number">
-                <a href="tel:+88012345688"
-                  ><i class="fa fa-phone" aria-hidden="true"></i>+880 (123) 456
-                  88</a
-                >
-              </li>
-            </ul>
+          <h2>lets work together</h2>
+          <div class="social-contact">
+            <div class="links">
+              <a href="mail:hafeez.workmail@gmail.com"
+                >hafeez.workmail@gmail.com</a
+              >
+              <a href="tel:+923235665632">+923235665632</a>
+            </div>
+            <div class="links-circle">
+              <span>Get In Touch</span>
+            </div>
           </div>
         </div>
       </div>
