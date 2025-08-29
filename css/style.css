@@ -186,7 +186,6 @@ p {
   color: #ffffff;
   padding: 16px 35px;
   border-radius: 15px;
-  display: block;
   align-items: center;
   transition: all 0.2s ease-in-out;
   position: relative;
@@ -1711,11 +1710,6 @@ header.scrolled {
   display: none;
 }
 
-.reverse .btn {
-  max-width: 122px;
-  width: 100%;
-}
-
 .marquee:hover .marquee-content {
   animation-play-state: paused;
 }
@@ -2221,10 +2215,6 @@ footer .fa-phone {
     padding: 16px 25px;
   }
 
-  .banner .left-column {
-    max-width: 360px;
-  }
-
   .banner .center-column img {
     max-width: 350px;
     width: 100%;
@@ -2387,10 +2377,6 @@ footer .fa-phone {
 
   .banner .right-column {
     width: 100%;
-  }
-
-  .banner .left-column {
-    max-width: 40%;
   }
 
   h2 {
@@ -2745,6 +2731,11 @@ footer .fa-phone {
   .projects .video-frame img {
     max-width: 643px;
   }
+
+  .banner {
+    padding: 150px 0 100px;
+  }
+
   .banner .sub-heading {
     font-size: 35px;
     line-height: 41px;
@@ -3063,8 +3054,48 @@ footer .fa-phone {
   .tab {
     font-size: 13px;
     line-height: 19px;
-    max-width: 100px;
     padding: 5px 5px;
+  }
+
+  .marquee-content {
+    gap: 20px;
+  }
+
+  .portfolio .top-row {
+    margin-bottom: 20px;
+  }
+
+  footer .footer-top .links-circle {
+    max-width: 91px;
+    padding: 34px 0;
+    margin-top: -211px;
+  }
+
+  footer .footer-top .links-circle span {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  footer .social-contact {
+    padding-top: 60px;
+  }
+
+  footer .footer-top .links {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  footer .footer-top .social-contact .links a {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  footer .footer-top {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
 }
 
@@ -3164,8 +3195,26 @@ footer .fa-phone {
   }
 
   .marquee-content .btn {
-    max-width: 97px;
-    font-size: 12px;
-    line-height: 18px;
+    max-width: 108px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .marquee-content {
+    gap: 0;
+  }
+
+  .portfolio .top-row {
+    margin-bottom: 0;
+  }
+
+  footer .footer-top .links-circle {
+    padding: 22px 0;
+    margin-top: -190px;
+  }
+
+  footer .footer-top .links-circle span {
+    font-size: 10px;
+    line-height: 16px;
   }
 }
