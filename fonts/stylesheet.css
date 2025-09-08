@@ -1,26 +1,8 @@
 @font-face {
-    font-family: 'Inter 28pt';
-    src: url('Inter28pt-Medium.woff2') format('woff2'),
-        url('Inter28pt-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter 28pt';
-    src: url('Inter28pt-Regular.woff2') format('woff2'),
-        url('Inter28pt-Regular.woff') format('woff');
+    font-family: 'Aguafina Script';
+    src: url('AguafinaScript-Regular.woff2') format('woff2'),
+        url('AguafinaScript-Regular.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter 28pt';
-    src: url('Inter28pt-SemiBold.woff2') format('woff2'),
-        url('Inter28pt-SemiBold.woff') format('woff');
-    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }

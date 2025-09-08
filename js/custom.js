@@ -173,6 +173,36 @@ window.addEventListener('loader', function () {
 });
 //loader-animation
 
+<<<<<<< HEAD
+=======
+//counting-animation
+const counterAnimation = (el, initialNum, finalNum) => {
+    if (Number.isInteger(finalNum)) {
+        let interval = setInterval(function () {
+            el.innerHTML = initialNum;
+            (initialNum >= finalNum) ? clearInterval(interval) : '';
+            initialNum++;
+        }, 150);
+    }
+    else {
+        let intInitialNum = Math.floor(initialNum);
+        let intFinalNum = Math.floor(finalNum);
+        let interval = setInterval(function () {
+            el.innerHTML = intInitialNum;
+            if (intInitialNum >= intFinalNum) {
+                clearInterval(interval);
+                el.innerHTML = `${finalNum.toString().replace('.', ',')}`;
+            }
+            intInitialNum++;
+        }, 50);
+    }
+}
+
+counterAnimation(document.querySelector('#foo'), 0, 2);
+counterAnimation(document.querySelector('#bar'), 0, 40);
+counterAnimation(document.querySelector('#satisfied'), 0, 99);
+//counting-animation
+>>>>>>> 8c0b336f713732c0ff56796733ae3a92b68ecc8c
 
 //mouse animation
 
