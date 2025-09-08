@@ -173,8 +173,7 @@ window.addEventListener('loader', function () {
 });
 //loader-animation
 
-<<<<<<< HEAD
-=======
+
 //counting-animation
 const counterAnimation = (el, initialNum, finalNum) => {
     if (Number.isInteger(finalNum)) {
@@ -202,7 +201,6 @@ counterAnimation(document.querySelector('#foo'), 0, 2);
 counterAnimation(document.querySelector('#bar'), 0, 40);
 counterAnimation(document.querySelector('#satisfied'), 0, 99);
 //counting-animation
->>>>>>> 8c0b336f713732c0ff56796733ae3a92b68ecc8c
 
 //mouse animation
 
