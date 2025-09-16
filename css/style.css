@@ -394,7 +394,10 @@ header .right-column .talk-btn {
 }
 
 header .logo {
-  line-height: 0;
+  line-height: 26px;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 header.scrolled {
@@ -441,7 +444,8 @@ header.scrolled {
   line-height: 71px;
   font-weight: 400;
   color: #ffffff;
-  max-width: 404px;
+  max-width: 547px;
+
   width: 100%;
   margin-bottom: 109px;
 }
