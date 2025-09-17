@@ -887,12 +887,15 @@ header.scrolled {
 }
 
 .resume .left-column {
-  max-width: 270px;
+  max-width: 261px;
   width: 100%;
   border-radius: 50%;
   background-color: #1f1f1f;
-  padding: 56px 75px;
+  padding: 5px 5px;
   margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .resume .left-column img {
