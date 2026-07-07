@@ -10,7 +10,27 @@ Personal portfolio site converted from static HTML to [Laravel](https://laravel.
 
 ## Run on your local machine
 
-### 1. Clone the repository
+### Easiest way (recommended)
+
+**Windows:** Double-click `setup.bat`  
+Or in Command Prompt / PowerShell inside the project folder:
+
+```bat
+setup.bat
+```
+
+**Mac / Linux:** In Terminal inside the project folder:
+
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+The script installs dependencies, creates `.env`, generates the app key, and starts the server at **http://127.0.0.1:8000**.
+
+### Manual setup
+
+#### 1. Clone the repository
 
 ```bash
 git clone https://github.com/hafeezworkmail-beep/portfolio.git
@@ -23,20 +43,20 @@ If you already have the repo, pull the latest changes:
 git pull origin main
 ```
 
-### 2. Install dependencies
+#### 2. Install dependencies
 
 ```bash
 composer install
 ```
 
-### 3. Environment setup
+#### 3. Environment setup
 
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 
-### 4. Start the development server
+#### 4. Start the development server
 
 ```bash
 php artisan serve
