@@ -6,24 +6,18 @@ echo  Hafeez Portfolio - Laravel Setup
 echo ========================================
 echo.
 
+call "%~dp0check-tools.bat"
+if %errorlevel% neq 0 exit /b 1
+
 where php >nul 2>nul
-if %errorlevel% neq 0 (
-    echo [ERROR] PHP is not installed or not in PATH.
-    echo Install Laragon or XAMPP, then try again:
-    echo   https://laragon.org/
-    echo   https://www.apachefriends.org/
-    pause
-    exit /b 1
-)
+if %errorlevel% neq 0 exit /b 1
 
 where composer >nul 2>nul
-if %errorlevel% neq 0 (
-    echo [ERROR] Composer is not installed or not in PATH.
-    echo Install Composer, then try again:
-    echo   https://getcomposer.org/download/
-    pause
-    exit /b 1
-)
+if %errorlevel% neq 0 exit /b 1
+
+echo.
+echo Starting setup...
+echo.
 
 echo [1/4] Installing PHP dependencies...
 call composer install

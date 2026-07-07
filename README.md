@@ -12,19 +12,19 @@ Personal portfolio site converted from static HTML to [Laravel](https://laravel.
 
 ### Easiest way (recommended)
 
-**Windows:** Double-click `setup.bat`  
-Or in Command Prompt / PowerShell inside the project folder:
+**Step 1 — Check tools first**
 
-```bat
-setup.bat
-```
-
-**Mac / Linux:** In Terminal inside the project folder:
+**Windows:** Double-click `check-tools.bat`  
+**Mac / Linux:**
 
 ```bash
-chmod +x setup.sh
-./setup.sh
+chmod +x check-tools.sh setup.sh
+./check-tools.sh
 ```
+
+**Step 2 — Run the app**
+
+**Windows:** Double-click `setup.bat`
 
 The script installs dependencies, creates `.env`, generates the app key, and starts the server at **http://127.0.0.1:8000**.
 
