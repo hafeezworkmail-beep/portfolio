@@ -1,43 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Fonts first -->
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./css/gsap.css" />
-    <!-- Font Awesome 4 first -->
-    <link rel="stylesheet" href="./css/font-awesome4.css" />
-    <link rel="stylesheet" href="./css/font-awesome.min4.css" />
+@extends('layouts.app')
 
-    <!-- Font Awesome 7 after -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    />
-
-    <!-- Vendor libraries -->
-    <link
-      rel="stylesheet"
-      href="https://codepen.io/GreenSock/pen/qEWKyrL.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/slick.css" />
-
-    <!-- Your custom styles last -->
-    <link
-      rel="stylesheet"
-      href="https://codepen.io/GreenSock/pen/xxmzBrw.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Hafeez</title>
-  </head>
-  <body>
-    <div class="loader">
+@section('content')
+<div class="loader">
       <div class="shape triangle"></div>
       <div class="shape square"></div>
       <div class="shape hexagon"></div>
@@ -190,12 +154,12 @@
             <div class="about-img">
               <video id="myVideo" autoplay loop playsinline>
                 <source
-                  src="./images/hafeez-project-video.mp4"
+                  src="{{ asset('images/hafeez-project-video.mp4') }}"
                   type="video/mp4"
                 />
                 <p>Your browser does not support HTML5 video.</p>
               </video>
-              <img src="./images/video-frame-img.png" alt="" />
+              <img src="{{ asset('images/video-frame-img.png') }}" alt="" />
             </div>
           </div>
         </div>
@@ -212,7 +176,7 @@
           data-aos-delay="200"
           data-aos-duration="200"
         >
-          <img src="./images/hafeez.png" alt="" />
+          <img src="{{ asset('images/hafeez.png') }}" alt="" />
         </div>
         <div
           class="right-column"
@@ -402,56 +366,56 @@
           >
             <div class="skills-box">
               <div class="top-img">
-                <img src="./images/experience-img-1.webp" alt="" />
+                <img src="{{ asset('images/experience-img-1.webp') }}" alt="" />
               </div>
               <h4>Figma</h4>
               <span>95%</span>
             </div>
             <div class="skills-box">
               <div class="top-img">
-                <img src="./images/experience-img-2.webp" alt="" />
+                <img src="{{ asset('images/experience-img-2.webp') }}" alt="" />
               </div>
               <h4>Framer</h4>
               <span>82%</span>
             </div>
             <div class="skills-box">
               <div class="top-img">
-                <img src="./images/experience-img-3.webp" alt="" />
+                <img src="{{ asset('images/experience-img-3.webp') }}" alt="" />
               </div>
               <h4>Photoshop</h4>
               <span>93%</span>
             </div>
             <div class="skills-box">
               <div class="top-img">
-                <img src="./images/experience-img-4.webp" alt="" />
+                <img src="{{ asset('images/experience-img-4.webp') }}" alt="" />
               </div>
               <h4>WordPress</h4>
               <span>95%</span>
             </div>
             <div class="skills-box">
               <div class="top-img">
-                <img src="./images/experience-img-5.webp" alt="" />
+                <img src="{{ asset('images/experience-img-5.webp') }}" alt="" />
               </div>
               <h4>Angular</h4>
               <span>65%</span>
             </div>
             <div class="skills-box">
               <div class="top-img">
-                <img src="./images/experience-img-7.webp" alt="" />
+                <img src="{{ asset('images/experience-img-7.webp') }}" alt="" />
               </div>
               <h4>Webflow</h4>
               <span>86%</span>
             </div>
             <div class="skills-box">
               <div class="top-img">
-                <img src="./images/experience-img-8.webp" alt="" />
+                <img src="{{ asset('images/experience-img-8.webp') }}" alt="" />
               </div>
               <h4>Python</h4>
               <span>62%</span>
             </div>
             <div class="skills-box">
               <div class="top-img">
-                <img src="./images/experience-img-6.webp" alt="" />
+                <img src="{{ asset('images/experience-img-6.webp') }}" alt="" />
               </div>
               <h4>Sketch</h4>
               <span>94%</span>
@@ -475,7 +439,7 @@
               data-aos-delay="200"
               data-aos-duration="200"
             >
-              <img src="./images/project1.webp" alt="" />
+              <img src="{{ asset('images/project1.webp') }}" alt="" />
             </div>
             <div
               class="right-column"
@@ -503,7 +467,7 @@
               data-aos-delay="200"
               data-aos-duration="200"
             >
-              <img src="./images/project2.webp" alt="" />
+              <img src="{{ asset('images/project2.webp') }}" alt="" />
             </div>
             <div
               class="right-column"
@@ -531,7 +495,7 @@
               data-aos-delay="200"
               data-aos-duration="200"
             >
-              <img src="./images/project2.webp" alt="" />
+              <img src="{{ asset('images/project2.webp') }}" alt="" />
             </div>
             <div
               class="right-column"
@@ -559,7 +523,7 @@
               data-aos-delay="200"
               data-aos-duration="200"
             >
-              <img src="./images/project5.png" alt="" />
+              <img src="{{ asset('images/project5.png') }}" alt="" />
             </div>
             <div
               class="right-column"
@@ -611,7 +575,7 @@
                 <div class="reviews-box splide__slide">
                   <div class="top-img">
                     <button class="open-modal">
-                      <img src="./images/client-img-1.webp" alt="" />
+                      <img src="{{ asset('images/client-img-1.webp') }}" alt="" />
                     </button>
                   </div>
                   <div class="modal-overlay">
@@ -619,11 +583,11 @@
                       <span class="close-modal">&times;</span>
                       <video controls>
                         <source
-                          src="./images/251873_small.mp4"
+                          src="{{ asset('images/251873_small.mp4') }}"
                           type="video/mp4"
                         />
                         <source
-                          src="./images/251873_small.webm"
+                          src="{{ asset('images/251873_small.webm') }}"
                           type="video/webm"
                         />
                         <p>Your browser does not support HTML5 video.</p>
@@ -643,7 +607,7 @@
                 <div class="reviews-box splide__slide">
                   <div class="top-img">
                     <button class="open-modal">
-                      <img src="./images/client-img-2.webp" alt="" />
+                      <img src="{{ asset('images/client-img-2.webp') }}" alt="" />
                     </button>
                   </div>
                   <div class="modal-overlay">
@@ -651,11 +615,11 @@
                       <span class="close-modal">&times;</span>
                       <video controls>
                         <source
-                          src="./images/251873_small.mp4"
+                          src="{{ asset('images/251873_small.mp4') }}"
                           type="video/mp4"
                         />
                         <source
-                          src="./images/251873_small.webm"
+                          src="{{ asset('images/251873_small.webm') }}"
                           type="video/webm"
                         />
                         <p>Your browser does not support HTML5 video.</p>
@@ -675,7 +639,7 @@
                 <div class="reviews-box splide__slide">
                   <div class="top-img">
                     <button class="open-modal">
-                      <img src="./images/client-img-1.webp" alt="" />
+                      <img src="{{ asset('images/client-img-1.webp') }}" alt="" />
                     </button>
                   </div>
                   <div class="modal-overlay">
@@ -683,11 +647,11 @@
                       <span class="close-modal">&times;</span>
                       <video controls>
                         <source
-                          src="./images/251873_small.mp4"
+                          src="{{ asset('images/251873_small.mp4') }}"
                           type="video/mp4"
                         />
                         <source
-                          src="./images/251873_small.webm"
+                          src="{{ asset('images/251873_small.webm') }}"
                           type="video/webm"
                         />
                         <p>Your browser does not support HTML5 video.</p>
@@ -707,7 +671,7 @@
                 <div class="reviews-box splide__slide">
                   <div class="top-img">
                     <button class="open-modal">
-                      <img src="./images/client-img-2.webp" alt="" />
+                      <img src="{{ asset('images/client-img-2.webp') }}" alt="" />
                     </button>
                   </div>
                   <div class="modal-overlay">
@@ -715,11 +679,11 @@
                       <span class="close-modal">&times;</span>
                       <video controls>
                         <source
-                          src="./images/251873_small.mp4"
+                          src="{{ asset('images/251873_small.mp4') }}"
                           type="video/mp4"
                         />
                         <source
-                          src="./images/251873_small.webm"
+                          src="{{ asset('images/251873_small.webm') }}"
                           type="video/webm"
                         />
                         <p>Your browser does not support HTML5 video.</p>
@@ -781,72 +745,72 @@
             <div class="marquee">
               <ul class="marquee-content">
                 <li>
-                  <a class="slide-img" href="./images/portfolio-image.jfif">
+                  <a class="slide-img" href="{{ asset('images/portfolio-image.jfif') }}">
                     <a class="btn" href="mailto:www.example.com"
                       ><i class="fas fa-globe"></i> www.example.com</a
                     >
                     <div class="portfolio-img">
-                      <img src="./images/portfolio-image.jfif" alt="GitHub" />
+                      <img src="{{ asset('images/portfolio-image.jfif') }}" alt="GitHub" />
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a class="slide-img" href="./images/portfolio-image-1.jfif">
+                  <a class="slide-img" href="{{ asset('images/portfolio-image-1.jfif') }}">
                     <a class="btn" href="mailto:www.example.com"
                       ><i class="fas fa-globe"></i> www.example.com</a
                     >
                     <div class="portfolio-img">
-                      <img src="./images/portfolio-image-1.jfif" alt="GitHub" />
+                      <img src="{{ asset('images/portfolio-image-1.jfif') }}" alt="GitHub" />
                     </div>
                   </a>
                 </li>
                 <li>
                   <a
                     class="slide-img"
-                    href="./images/portfolio-project-img.png"
+                    href="{{ asset('images/portfolio-project-img.png') }}"
                   >
                     <a class="btn" href="mailto:www.example.com"
                       ><i class="fas fa-globe"></i> www.example.com</a
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a class="slide-img" href="./images/portfolio-image.jfif">
+                  <a class="slide-img" href="{{ asset('images/portfolio-image.jfif') }}">
                     <a class="btn" href="mailto:www.example.com"
                       ><i class="fas fa-globe"></i> www.example.com</a
                     >
                     <div class="portfolio-img">
-                      <img src="./images/portfolio-image.jfif" alt="GitHub" />
+                      <img src="{{ asset('images/portfolio-image.jfif') }}" alt="GitHub" />
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a class="slide-img" href="./images/portfolio-image-1.jfif">
+                  <a class="slide-img" href="{{ asset('images/portfolio-image-1.jfif') }}">
                     <a class="btn" href="mailto:www.example.com"
                       ><i class="fas fa-globe"></i> www.example.com</a
                     >
                     <div class="portfolio-img">
-                      <img src="./images/portfolio-image-1.jfif" alt="GitHub" />
+                      <img src="{{ asset('images/portfolio-image-1.jfif') }}" alt="GitHub" />
                     </div>
                   </a>
                 </li>
                 <li>
                   <a
                     class="slide-img"
-                    href="./images/portfolio-project-img.png"
+                    href="{{ asset('images/portfolio-project-img.png') }}"
                   >
                     <a class="btn" href="mailto:www.example.com"
                       ><i class="fas fa-globe"></i> www.example.com</a
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -866,7 +830,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -879,7 +843,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -892,7 +856,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -905,7 +869,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -918,7 +882,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -931,7 +895,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -952,7 +916,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -965,7 +929,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -978,7 +942,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -991,7 +955,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1004,7 +968,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1017,7 +981,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1037,7 +1001,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1050,7 +1014,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1063,7 +1027,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1076,7 +1040,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1089,7 +1053,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1102,7 +1066,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1123,7 +1087,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1136,7 +1100,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1149,7 +1113,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1162,7 +1126,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1175,7 +1139,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1188,7 +1152,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1208,7 +1172,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1221,7 +1185,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1234,7 +1198,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1247,7 +1211,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1260,7 +1224,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1273,7 +1237,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1294,7 +1258,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1307,7 +1271,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1320,7 +1284,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1333,7 +1297,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1346,7 +1310,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1359,7 +1323,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1379,7 +1343,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1392,7 +1356,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1405,7 +1369,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1418,7 +1382,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1431,7 +1395,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1444,7 +1408,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1465,7 +1429,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1478,7 +1442,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1491,7 +1455,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1504,7 +1468,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1517,7 +1481,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1530,7 +1494,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1550,7 +1514,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1563,7 +1527,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1576,7 +1540,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1589,7 +1553,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1602,7 +1566,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1615,7 +1579,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1636,7 +1600,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1649,7 +1613,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1662,7 +1626,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1675,7 +1639,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1688,7 +1652,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1701,7 +1665,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1721,7 +1685,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1734,7 +1698,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1747,7 +1711,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1760,7 +1724,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1773,7 +1737,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1786,7 +1750,7 @@
                     >
                     <div class="portfolio-img">
                       <img
-                        src="./images/portfolio-project-img.png"
+                        src="{{ asset('images/portfolio-project-img.png') }}"
                         alt="GitHub"
                       />
                     </div>
@@ -1879,7 +1843,7 @@
       <div class="copyright">
         <div class="container">
           <span
-            >Copyright @2025, <a href="#">Noxfolio</a> All Rights Reserved</span
+            >Copyright @@2025, <a href="#">Noxfolio</a> All Rights Reserved</span
           >
           <ul>
             <li><a href="www.facebook.com">Facebook</a></li>
@@ -1939,37 +1903,37 @@
     ></script>
 
     <!-- jQuery -->
-    <script src="./js/jquery.min.js"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
 
     <!-- GSAP core -->
     <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
 
     <!-- GSAP plugins -->
     <script src="https://assets.codepen.io/16327/Observer.min.js"></script>
-    <script src="./js/ScrollTrigger.min.js"></script>
-    <script src="./js/ScrollSmoother.min.js"></script>
+    <script src="{{ asset('js/ScrollTrigger.min.js') }}"></script>
+    <script src="{{ asset('js/ScrollSmoother.min.js') }}"></script>
 
     <!-- GSAP-related scripts (after GSAP + plugins) -->
-    <script src="./js/smoother-script.js"></script>
+    <script src="{{ asset('js/smoother-script.js') }}"></script>
 
     <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
 
     <!-- Slick carousel -->
-    <script src="./js/slick.min.js"></script>
+    <script src="{{ asset('js/slick.min.js') }}"></script>
 
     <!-- Lenis (if you are NOT using GSAP ScrollSmoother, otherwise remove) -->
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.21/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@studio-freight/lenis@1.0.21/bundled/lenis.min.js"></script>
 
     <!-- Your custom scripts last -->
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=cahcebustin"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-    <script src="./js/gsap.js"></script>
+    <script src="{{ asset('js/gsap.js') }}"></script>
     <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.js"></script>
-    <script src="./js/custom.js"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
 
     <script>
       gsap.registerPlugin(ScrollTrigger);
@@ -1992,5 +1956,4 @@
         });
       });
     </script>
-  </body>
-</html>
+@endsection
